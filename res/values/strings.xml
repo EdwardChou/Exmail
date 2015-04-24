@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exmail</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="emailaddress">Email Account</string>
+    <string name="emailpassword">Password</string>
+    <string name="emaillogin">Login</string>
+    <string name="remenberPassword">Remember Password</string>
+    <string name="autoLogin">Auto Login</string>
+    <string name="tv_title">ExMail</string>
+    <string name="tv_online">Online friends</string>
+    <string name="tv_my">My friends</string>
+    <string name="tv_stu">My classmates</string>
+    <string name="back">Return</string>
+    <string name="writer">New email</string>
+    <string name="send">Send</string>
+    <string name="tv_t">Send</string>
+    <string name="tv_f">To</string>
+    <string name="tv_zhuti">Subject</string>
+    <string name="acctchment">Attachment</string>
+    <string name="content">Message</string>
+    <string name="tv_new">New</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_relay">Reply/Forwards</string>
+    <string name="mail_box">Mailbox</string>
+    <string name="mail_content">Email</string>
+    <string name="btn_replay">Reply</string>
+    <string name="contact">Contacts</string>
+    <string name="add_contact">Add Contacts</string>
+    <string name="ok">OK</string>
+    <string name="draft">Drafts</string>
+    <string name="update_email">Update Email Address</string>
+    <string name="delete_user">Delete Contact</string>
+
+    <!-- ERROR -->
+    <string name="err_wrong_acc_pass">Wrong account or password</string>
+    <string name="err_empty_address">Address should not be empty</string>
+    <string name="err_empty_pass">Password should not be empty</string>
+    <string name="err_wrong_add_format">Address format error</string>
+    <string name="err_network_timeout">Network connection out of time</string>
+    <string name="err_google_auth">Error: Enable access for less secure apps in Google Security Setting</string>
+    <string name="err_imap_unavailable">Error: Haven\'t open IMAP service</string>
+
+    <string-array name="array_home_item">
+        <item>Contact</item>
+        <item>Send Email</item>
+        <item>Inbox</item>
+        <item>Tool</item>
+    </string-array>
+    <string-array name="array_contact_item">
+        <item>Contacts</item>
+        <item>Add Contacts</item>
+    </string-array>
+    <string-array name="array_sendemail_item">
+        <item>Write Email</item>
+        <item>Drafts</item>
+    </string-array>
+    <string-array name="array_inbox_item">
+        <item>All Email</item>
+        <item>Unseen Email</item>
+        <item>Seen Email</item>
+    </string-array>
+    <string-array name="array_tool_item">
+        <item>Calendar</item>
+        <item>Notes</item>
+    </string-array>
+
+    <!-- Calender -->
+    <string name="Mon">一</string>
+    <string name="Tue">二</string>
+    <string name="Wed">三</string>
+    <string name="Thu">四</string>
+    <string name="Fri">五</string>
+    <string name="Sat">六</string>
+    <string name="Sun">日</string>
+
+</resources>

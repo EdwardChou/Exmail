@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- text size -->
+    <dimen name="txt_caption">12sp</dimen>
+    <dimen name="txt_menu">14sp</dimen>
+    <dimen name="txt_body">14sp</dimen>
+    <dimen name="txt_button">14sp</dimen>
+    <dimen name="txt_subhead">16sp</dimen>
+    <dimen name="txt_title">20sp</dimen>
+    <dimen name="txt_headline">24sp</dimen>
+    <dimen name="txt_display_s">34sp</dimen>
+    <dimen name="txt_display_m">45sp</dimen>
+    <dimen name="txt_display_l">56sp</dimen>
+    <dimen name="txt_display_xl">112sp</dimen>
+
+    <!-- layout space -->
+    <dimen name="space_titlebar_btn">24dp</dimen>
+    <dimen name="space_item">48dp</dimen>
+    <dimen name="space_titlebar">56dp</dimen>
+
+    <!-- layout margin -->
+    <dimen name="margin_s">8dp</dimen>
+    <dimen name="margin_m">16dp</dimen>
+    <dimen name="margin_xm">52dp</dimen>
+    <dimen name="margin_l">72dp</dimen>
+
+    <!-- layout padding -->
+    <dimen name="padding_titlebar_btn">2dp</dimen>
+
+    <!-- widget -->
+    <style name="titlebar_title" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/txt_headline</item>
+    </style>
+
+    <style name="titlebar_btn" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/space_titlebar_btn</item>
+        <item name="android:layout_height">@dimen/space_titlebar_btn</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+</resources>

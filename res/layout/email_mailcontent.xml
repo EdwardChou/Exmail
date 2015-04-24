@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MailContentActivity" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_titlebar"
+        android:background="@color/blue" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/titlebar_btn"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:background="@drawable/ic_arrow_back_white_36dp" />
+
+        <TextView
+            style="@style/titlebar_title"
+            android:text="@string/mail_content" />
+
+        <Button
+            android:id="@+id/btn_relay"
+            style="@style/titlebar_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_m"
+            android:background="@drawable/ic_reply" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ll_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dip"
+        android:text="dsfsd"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/tv_mailsubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_addr"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dip"
+        android:textIsSelectable="true"
+        android:text="sjdfjd"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/lv_mailattachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_mailsubject"
+        android:layout_margin="5dp"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/wv_mailcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lv_mailattachment"
+        android:layout_margin="5dp"
+        android:background="@color/pink"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_mailcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lv_mailattachment"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:gravity="top"
+        android:textIsSelectable="true" />
+
+</RelativeLayout>

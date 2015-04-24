@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_titlebar"
+        android:background="@color/blue" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/titlebar_btn"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:background="@drawable/ic_arrow_back_white_36dp"
+            android:onClick="back" />
+
+        <TextView
+            style="@style/titlebar_title"
+            android:text="Calendar" />
+        
+        <Button
+            android:id="@+id/add_event"
+            style="@style/titlebar_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_m"
+            android:background="@drawable/ic_add_white_36dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

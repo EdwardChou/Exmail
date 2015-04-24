@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 上滑线 -->
+    <ImageView
+        android:id="@+id/di"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/margin_s"
+        android:layout_marginTop="@dimen/margin_s"
+        android:layout_marginLeft="@dimen/margin_xm"
+        android:background="@drawable/xuxiang_style"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_alpha"
+            android:layout_width="@dimen/space_item"
+            android:layout_height="@dimen/space_item"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="@dimen/txt_display_s"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_toRightOf="@id/tv_alpha"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/email_contact_item_ico"
+            android:layout_width="@dimen/space_item"
+            android:layout_height="@dimen/space_item"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/ic_constact_head" />
+    </RelativeLayout>
+
+</LinearLayout>

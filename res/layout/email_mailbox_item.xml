@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_new"
+        android:textColor="#FF0000"
+        android:textIsSelectable="false"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_new"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:text="12345678901234567890@address.com"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_attach"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/tv_from"
+        android:src="@drawable/ic_attach_file_grey600_18dp" />
+
+    <TextView
+        android:id="@+id/tv_sentdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_new"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:text="2011-12-21 00:00:00"
+        android:textColor="#999999"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_from"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="subject"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_digest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_subject"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="我觉得我是被邀请的唯一一个赞数不超过1k的用户吧。感谢知乎错爱，只是工作原因，实在去不了。至于标准。。。我答的几道题专业度也说不上太高，态度还算好。给个参考吧。"
+        android:textColor="#999999"
+        android:textIsSelectable="false"
+        android:textSize="12sp" />
+
+</RelativeLayout>
