@@ -427,8 +427,8 @@ public class DBProvider {
 		if (null != cursor) {
 			result = new ArrayList<Contact>();
 			while (cursor.moveToNext()) {
-				Contact contact = new Contact(cursor.getString(1),
-						cursor.getString(2), cursor.getString(3));
+				Contact contact = new Contact(cursor.getString(2),
+						cursor.getString(3), cursor.getString(4));
 				result.add(contact);
 			}
 			cursor.close();
