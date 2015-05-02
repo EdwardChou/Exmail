@@ -20,13 +20,13 @@
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
 
     <application
-        android:name="com.cuhk.cse.exmail.app.MyApplication"
+        android:name="com.cuhk.cse.exmail.model.app.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.cuhk.cse.exmail.LoginActivity"
+            android:name="com.cuhk.cse.exmail.view.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,34 +34,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.cuhk.cse.exmail.HomeActivity" />
-        <activity android:name="com.cuhk.cse.exmail.MailEditActivity" />
-        <activity android:name="com.cuhk.cse.exmail.MailBoxActivity" />
-        <activity android:name="com.cuhk.cse.exmail.MailContentActivity" />
-        <activity android:name="com.cuhk.cse.exmail.MailContactsActivity" />
-        <activity android:name="com.cuhk.cse.exmail.SettingActivity" />
-        <activity android:name="com.cuhk.cse.exmail.MailAddContacts" />
-        <activity android:name="com.cuhk.cse.exmail.MailDraftsActivity" />
-        <activity android:name="com.cuhk.cse.exmail.calendar.BaseCalendar" />
+        <activity android:name="com.cuhk.cse.exmail.view.HomeActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.MailEditActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.MailBoxActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.MailAddContactActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.MailContentActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.MailContactActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.SettingActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.MailAddContacts" />
+        <activity android:name="com.cuhk.cse.exmail.view.MailDraftsActivity" />
+        <activity android:name="com.cuhk.cse.exmail.view.calendar.BaseCalendar" />
 
-        <provider
-            android:name="com.cuhk.cse.exmail.provider.EmailContactsProvider"
-            android:authorities="com.cuhk.cse.exmail.emailcontactsprovider" />
-        <provider
-            android:name="com.cuhk.cse.exmail.provider.DraftsProvider"
-            android:authorities="com.cuhk.cse.exmail.draftprovider" />
-        <provider
-            android:name="com.cuhk.cse.exmail.provider.AttachmentProvider"
-            android:authorities="com.cuhk.cse.exmail.attachmentprovider" />
-        <provider
-            android:name="com.cuhk.cse.exmail.provider.ContactGroupProvider"
-            android:authorities="com.cuhk.cse.exmail.contactgroupprovider" />
-        <provider
-            android:name="com.cuhk.cse.exmail.provider.EmailProvider"
-            android:authorities="com.cuhk.cse.exmail.emailprovider" />
-        <provider
-            android:name="com.cuhk.cse.exmail.provider.EmailUserProvider"
-            android:authorities="com.cuhk.cse.exmail.emailuserprovider" />
+        <service android:name="com.cuhk.cse.exmail.controller.service.MailHelperService" />
     </application>
 
 </manifest>

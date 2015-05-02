@@ -19,6 +19,14 @@
         <TextView
             style="@style/titlebar_title"
             android:text="@string/contact" />
+
+        <Button
+            android:id="@+id/email_contact_right_btn"
+            style="@style/titlebar_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_m"
+            android:background="@drawable/ic_add_white_36dp"
+            android:onClick="add" />
     </RelativeLayout>
 
     <ListView

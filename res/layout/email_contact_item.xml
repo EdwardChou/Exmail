@@ -5,13 +5,14 @@
     android:orientation="vertical" >
 
     <!-- 上滑线 -->
-    <ImageView
+
+    <ImageView
         android:id="@+id/di"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginBottom="@dimen/margin_s"
-        android:layout_marginTop="@dimen/margin_s"
         android:layout_marginLeft="@dimen/margin_xm"
+        android:layout_marginTop="@dimen/margin_s"
         android:background="@drawable/xuxiang_style"
         android:visibility="invisible" />
 
@@ -39,20 +40,21 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/margin_m"
             android:layout_toRightOf="@id/tv_alpha"
+            android:gravity="center_vertical"
             android:orientation="vertical" >
 
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dip"
+                android:text="111"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tv_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dip" />
+                android:text="11" />
         </LinearLayout>
 
         <ImageView
@@ -61,8 +63,16 @@
             android:layout_height="@dimen/space_item"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="10dip"
+            android:layout_marginRight="30dip"
             android:src="@drawable/ic_constact_head" />
+
+        <CheckBox
+            android:id="@+id/email_contact_item_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
     </RelativeLayout>
 
 </LinearLayout>
