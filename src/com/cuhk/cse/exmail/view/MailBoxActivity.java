@@ -27,9 +27,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cuhk.cse.exmail.R;
-import com.cuhk.cse.exmail.R.id;
-import com.cuhk.cse.exmail.R.layout;
-import com.cuhk.cse.exmail.R.string;
 import com.cuhk.cse.exmail.controller.service.MailHelperService;
 import com.cuhk.cse.exmail.controller.service.MailHelperService.LocalBinder;
 import com.cuhk.cse.exmail.controller.utils.ExMailConstant;
@@ -282,6 +279,9 @@ public class MailBoxActivity extends Activity implements Notify {
 	 */
 	public void back(View v) {
 		finish();
+	}
+	
+	public void search(View v) {
 	}
 
 	private ServiceConnection mConnection = new ServiceConnection() {
